@@ -2,7 +2,13 @@
 export default {
   content: ["./public/src/*.js", "index.html"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        vulcan: "#0B0D17",
+        tropicalBlue: "#D0D6F9",
+        white: "#FFFFFF",
+      },
+    },
   },
   plugins: [],
 };
