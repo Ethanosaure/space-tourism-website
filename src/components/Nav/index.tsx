@@ -21,11 +21,15 @@ const navLinks: NavLink[] = [
   },
 ];
 
-const Component = () => {
+const Component = ({ isOpen }: { isOpen: boolean }) => {
   return (
-    <div>
+    <div
+      className={`md:flex ${isOpen ? "flex flex-col text-white " : "hidden"}`}
+    >
       {navLinks.map((element) => (
-        <a href={element.link}>{element.name}</a>
+        <a key={element.name} href={element.link}>
+          {element.name}
+        </a>
       ))}
     </div>
   );
