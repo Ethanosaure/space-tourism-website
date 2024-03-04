@@ -5,11 +5,7 @@ import SubHeading from "../../typographies/SubHeadings";
 const Component = () => {
   return (
     <div>
-      <Paragraph
-        kind="p"
-        content="je suis un paragraphe de type p"
-        css="text-[60px]"
-      />
+      <Paragraph kind="p" content="je suis un paragraphe de type p" />
       <Paragraph kind="span" content="je suis un paragraphe de type span" />
       <Heading kind="h1" content="je suis un titre de type h1" />
       <Heading kind="h2" content="je suis un titre de type h2" />
