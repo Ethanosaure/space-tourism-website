@@ -25,18 +25,18 @@ const navLinks: NavLink[] = [
 const Component = ({ isOpen }: { isOpen: boolean }) => {
   return (
     <div
-      className={`text-white md:flex md:w-[100%] md:flex-row md:items-center md:justify-around ${isOpen ? "flex flex-col pt-[20%] md:pt-0" : "hidden"}`}
+      className={`text-white md:mt-0 md:flex md:h-[100%] md:w-[100%] md:flex-row md:justify-evenly ${isOpen ? "flex flex-col md:pt-0" : "hidden"}`}
     >
       {navLinks.map((element, index) => (
         <a
           key={element.name}
           href={element.link}
-          className="pb-[10%] pl-[10%] md:ml-0 md:pb-0 md:pl-0"
+          className="relative ml-[5%] mt-[5%] hover:border-r-4 hover:border-r-white md:ml-0 md:mt-[2.5%] md:items-center md:text-center md:hover:border-b-4 md:hover:border-r-0 "
         >
           <Paragraph
             kind="span"
             content={`0${index}`}
-            css="pr-[5%] font-bold md:hidden"
+            css="mr-[5%] font-bold md:hidden"
           />
           <Paragraph kind="span" content={element.name} />
         </a>
