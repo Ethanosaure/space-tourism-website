@@ -1,4 +1,4 @@
-import Paragraph from "../../typographies/Paragraphs";
+import Paragraph from "../../typographies/Paragraph";
 interface NavLink {
   name: string;
   link: string;
