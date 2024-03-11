@@ -1,10 +1,12 @@
 import { SubHeadingsProps } from "../../types/interface";
 
 const Typographies = ({ kind, content, css }: SubHeadingsProps) => {
-  const classNameSub1 = css ? `text-[28px] ${css}` : `text-[28px]`;
+  const classNameSub1 = css
+    ? `text-[28px] text-white ${css}`
+    : `text-[28px] text-white`;
   const classNameSub2 = css
-    ? `text-[14px] tracking-[2.7px] ${css}`
-    : `text-[14px] tracking-[2.7px]`;
+    ? `text-[14px] tracking-[2.7px] text-white ${css}`
+    : `text-[14px] tracking-[2.7px] text-white`;
   switch (kind) {
     case "subHeading1":
       return <h1 className={classNameSub1}>{content}</h1>;

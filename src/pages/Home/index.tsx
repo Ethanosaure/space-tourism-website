@@ -20,7 +20,7 @@ const Component = () => {
         <Heading
           kind="h1"
           content={titleContent}
-          css="text-white text-center text-[100px] mb-[20px] md:text-[150px] md:mb-0"
+          css="text-center text-[100px] mb-[20px] md:text-[150px] md:mb-0"
         />
         <Paragraph
           kind="p"

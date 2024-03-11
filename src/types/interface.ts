@@ -1,5 +1,6 @@
 interface TypographiesProps {
   content: string | number | React.ReactNode;
+  key?: string;
   css?: string;
 }
 
