@@ -9,10 +9,9 @@ const Component = () => {
   data.forEach((destination) => {
     dataPlanet.push(destination.name);
   });
-  console.log(dataPlanet);
   return (
     <div className=" flex h-screen w-screen flex-col bg-[url('../../../public/assets/destination/background-destination-mobile.jpg')] bg-cover bg-center bg-no-repeat md:bg-[url('../../../public/assets/destination/background-destination-tablet.jpg')] xl:bg-[url('../../../public/assets/destination/background-destination-desktop.jpg')] ">
-      <div className="flex flex-col items-center pt-[25%]">
+      <div className="flex flex-col items-center justify-start pt-[20%]">
         <div>
           <Paragraph
             kind="span"

@@ -1,31 +1,42 @@
 import SubHeading from "../../../typographies/SubHeading";
 import { useState } from "react";
+import datas from "../../../data/data.json";
 interface ComponentProps {
-  arrayNames?: string[];
-  arrayNumbers?: number[];
+  arrayNames: string[];
 }
 
-const Component: React.FC<ComponentProps> = ({ arrayNames, arrayNumbers }) => {
-  const [isSelected, setIsSelected] = useState(false);
-  if (!arrayNames && !arrayNumbers) {
-    throw new Error("must have arrayNames or arrayNumbers");
+const Component: React.FC<ComponentProps> = ({ arrayNames }) => {
+  const data = datas.destinations;
+  const [PlanetPicture, setPlanetPicture] = useState(data[0].images.png);
+  const [selectedPlanet, setSelectedPlanet] = useState(0);
+  let picture = PlanetPicture;
+  let selected = selectedPlanet;
+  function showPlanetPictures(index: number) {
+    setPlanetPicture(data[index].images.png);
+    setSelectedPlanet(index);
   }
+
   return (
-    <div className="flex flex-row items-center justify-center">
-      {arrayNames
-        ? arrayNames.map((planet, index) => (
-            <div>
-              <SubHeading
-                kind="subHeading2"
-                key={planet}
-                content={planet}
-                css="text-[20px] font-thin uppercase ml-[15px] mr-[15px] pb-[10px] hover:border-b-[4px] hover:border-b-white "
-              />
-            </div>
-          ))
-        : arrayNumbers?.map((element) => (
-            <div key={element} className=""></div>
-          ))}
+    <div className="flex flex-col items-center justify-center">
+      <div>
+        <img
+          src={picture}
+          alt="planet picture"
+          className="mt-[50px] h-[250px] w-[250px]"
+        />
+      </div>
+      <div className="flex flex-row">
+        {arrayNames.map((planet, index) => (
+          <div key={planet} className="">
+            <SubHeading
+              kind="subHeading2"
+              content={planet}
+              onClickFunction={() => showPlanetPictures(index)}
+              css={`text-[20px] font-thin uppercase ml-[15px] mr-[15px] ${selected === index ? "border-b-white border-b-[4px]" : "hover:border-b-[4px] hover:border-b-tropicalBlue"} pb-[10px] mt-[25px] text-tropicalBlue  `}
+            />
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

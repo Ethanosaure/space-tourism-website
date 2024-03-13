@@ -1,7 +1,10 @@
+import { MouseEventHandler } from "react";
+
 interface TypographiesProps {
   content: string | number | React.ReactNode;
   key?: string;
   css?: string;
+  onClickFunction?: Function;
 }
 
 export interface HeadingsProps extends TypographiesProps {
@@ -14,4 +17,5 @@ export interface ParagraphsProps extends TypographiesProps {
 
 export interface SubHeadingsProps extends TypographiesProps {
   kind: "subHeading1" | "subHeading2";
+  onClickFunction?: MouseEventHandler<HTMLHeadingElement>;
 }

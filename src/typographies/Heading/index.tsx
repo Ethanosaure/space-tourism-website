@@ -11,8 +11,8 @@ const Typographies = ({ kind, content, css }: HeadingsProps) => {
     ? `text-[56px] text-white  ${css}`
     : `text-[56px] text-white`;
   const classNameH4 = css
-    ? `text-[32px] text-white ${css}`
-    : `text-[32px] text-white`;
+    ? `text-[32px] text-black ${css}`
+    : `text-[32px] text-black`;
   const classNameH5 = css
     ? `text-[28px] tracking-[4.72px] text-white ${css}`
     : `text-[28px] tracking-[4.72px] text-white`;
