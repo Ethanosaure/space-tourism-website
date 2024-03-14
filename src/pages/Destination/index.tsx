@@ -1,8 +1,7 @@
 import datas from "../../data/data.json";
-// import Heading from "../../typographies/Heading";
 import Paragraph from "../../typographies/Paragraph";
-// import SubHeading from "../../typographies/SubHeading";
 import Slider from "../../components/Buttons/Slider";
+
 const Component = () => {
   const data = datas.destinations;
   const dataPlanet: string[] = [];
@@ -25,7 +24,7 @@ const Component = () => {
           />
         </div>
         <div>
-          <Slider arrayNames={dataPlanet} />
+          <Slider arrayNames={dataPlanet} data={data} />
         </div>
       </div>
     </div>

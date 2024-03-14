@@ -1,16 +1,12 @@
 import SubHeading from "../../../typographies/SubHeading";
 import { useState } from "react";
-import datas from "../../../data/data.json";
-interface ComponentProps {
-  arrayNames: string[];
-}
+import { ComponentProps } from "../../../types/interface";
 
-const Component: React.FC<ComponentProps> = ({ arrayNames }) => {
-  const data = datas.destinations;
-  const [PlanetPicture, setPlanetPicture] = useState(data[0].images.png);
+const Component: React.FC<ComponentProps> = ({ arrayNames, data }) => {
+  const [planetPicture, setPlanetPicture] = useState(data[0].images.png);
   const [selectedPlanet, setSelectedPlanet] = useState(0);
-  let picture = PlanetPicture;
-  let selected = selectedPlanet;
+  const picture = planetPicture;
+  const selected = selectedPlanet;
   function showPlanetPictures(index: number) {
     setPlanetPicture(data[index].images.png);
     setSelectedPlanet(index);
