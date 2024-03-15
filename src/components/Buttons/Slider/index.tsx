@@ -1,8 +1,9 @@
 import SubHeading from "../../../typographies/SubHeading";
 import { useState } from "react";
-import { ComponentProps } from "../../../types/interface";
+import { SliderProps } from "../../../types/interface";
+import Description from "../../Description";
 
-const Component: React.FC<ComponentProps> = ({ arrayNames, data }) => {
+const Component: React.FC<SliderProps> = ({ arrayNames, data }) => {
   const [planetPicture, setPlanetPicture] = useState(data[0].images.png);
   const [selectedPlanet, setSelectedPlanet] = useState(0);
   const picture = planetPicture;
@@ -33,6 +34,7 @@ const Component: React.FC<ComponentProps> = ({ arrayNames, data }) => {
           </div>
         ))}
       </div>
+      <Description selectedPlanet={selectedPlanet} data={data} />
     </div>
   );
 };

@@ -1,7 +1,6 @@
 import Paragraph from "../../typographies/Paragraph";
 import Heading from "../../typographies/Heading";
 import ExploreBtn from "../../components/Buttons/ExploreBtn";
-
 import datas from "../../data/data.json";
 
 const Component = () => {

@@ -32,7 +32,12 @@ interface Destination {
   travel: string;
 }
 
-export interface ComponentProps {
+export interface SliderProps {
   arrayNames: string[];
   data: Destination[];
+}
+
+export interface DescriptionProps {
+  data: Destination[];
+  selectedPlanet: number;
 }

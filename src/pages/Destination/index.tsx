@@ -9,7 +9,7 @@ const Component = () => {
     dataPlanet.push(destination.name);
   });
   return (
-    <div className=" flex h-screen w-screen flex-col bg-[url('../../../public/assets/destination/background-destination-mobile.jpg')] bg-cover bg-center bg-no-repeat md:bg-[url('../../../public/assets/destination/background-destination-tablet.jpg')] xl:bg-[url('../../../public/assets/destination/background-destination-desktop.jpg')] ">
+    <div className=" flex h-screen min-h-[1200px] w-screen min-w-[375px] flex-col bg-[url('../../../public/assets/destination/background-destination-mobile.jpg')] bg-cover bg-center bg-no-repeat md:bg-[url('../../../public/assets/destination/background-destination-tablet.jpg')] xl:bg-[url('../../../public/assets/destination/background-destination-desktop.jpg')] ">
       <div className="flex flex-col items-center justify-start pt-[20%]">
         <div>
           <Paragraph
