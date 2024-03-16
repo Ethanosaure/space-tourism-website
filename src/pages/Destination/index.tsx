@@ -15,7 +15,7 @@ const Component = () => {
           <Paragraph
             kind="span"
             content={"01"}
-            css="text-[25px] font-bold text-opacity-[25%] text-center tracking-[4.2px] mb-[20px] md:mb-0 md:text-[20px] xl:text-[27px] uppercase pr-[20px]"
+            css="text-[25px] text-white font-bold text-opacity-[25%] text-center tracking-[4.2px] mb-[20px] md:mb-0 md:text-[20px] xl:text-[27px] uppercase pr-[20px]"
           />
           <Paragraph
             kind="span"

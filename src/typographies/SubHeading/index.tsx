@@ -6,12 +6,10 @@ const Typographies = ({
   css,
   onClickFunction,
 }: SubHeadingsProps) => {
-  const classNameSub1 = css
-    ? `text-[28px] text-white ${css}`
-    : `text-[28px] text-white`;
+  const classNameSub1 = css ? `text-[28px]  ${css}` : `text-[28px] `;
   const classNameSub2 = css
-    ? `text-[14px] tracking-[2.7px] text-white ${css}`
-    : `text-[14px] tracking-[2.7px] text-white`;
+    ? `text-[14px] tracking-[2.7px]  ${css}`
+    : `text-[14px] tracking-[2.7px] `;
 
   switch (kind) {
     case "subHeading1":

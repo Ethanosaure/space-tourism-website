@@ -31,7 +31,7 @@ const Component = ({ isOpen }: { isOpen: boolean }) => {
         <a
           key={element.name}
           href={element.link}
-          className="relative ml-[5%] mt-[5%] hover:border-r-4 hover:border-r-white md:ml-0 md:mt-[25px] md:items-center md:text-center md:hover:border-b-4 md:hover:border-r-0 "
+          className="relative ml-[5%] mt-[5%] text-white hover:border-r-4 hover:border-r-white md:ml-0 md:mt-[25px] md:items-center md:text-center md:hover:border-b-4 md:hover:border-r-0 md:hover:border-b-white "
         >
           <Paragraph
             kind="span"

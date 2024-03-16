@@ -18,7 +18,7 @@ const Component = () => {
       className="h-[200px] w-[200px] rounded-[100%] bg-white xl:h-[250px] xl:w-[250px] "
       onClick={handleClick}
     >
-      <Heading kind="h4" content={"EXPLORE"} />
+      <Heading kind="h4" content={"EXPLORE"} css="text-black" />
     </button>
   );
 };

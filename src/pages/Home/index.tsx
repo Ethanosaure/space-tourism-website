@@ -14,17 +14,17 @@ const Component = () => {
         <Paragraph
           kind="span"
           content={subHeadingContent}
-          css="text-tropicalBlue text-[25px] text-center tracking-[4.2px] mb-[20px] md:mb-0 md:text-[20px] xl:text-[27px] "
+          css="text-[#D0D6F9] text-[25px] text-center tracking-[4.2px] mb-[20px] md:mb-0 md:text-[20px] xl:text-[27px] "
         />
         <Heading
           kind="h1"
           content={titleContent}
-          css="text-center text-[100px] mb-[20px] md:text-[150px] md:mb-0"
+          css="text-center text-white text-[100px] mb-[20px] md:text-[150px] md:mb-0"
         />
         <Paragraph
           kind="p"
           content={textContent}
-          css="text-tropicalBlue tracking-[1.5px] text-center text-[20px] w-[420px] mb-[20%] md:w-[490px] md:text-[18px] xl:text-justify xl:text-[20px] "
+          css="text-[#D0D6F9] tracking-[1.5px] text-center text-[20px] w-[420px] mb-[20%] md:w-[490px] md:text-[18px] xl:text-justify xl:text-[20px] "
         />
       </div>
       <div>

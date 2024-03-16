@@ -29,7 +29,7 @@ const Component: React.FC<SliderProps> = ({ arrayNames, data }) => {
               kind="subHeading2"
               content={planet}
               onClickFunction={() => showPlanetPictures(index)}
-              css={`text-[20px] font-thin uppercase ml-[15px] mr-[15px] ${selected === index ? "border-b-white border-b-[4px]" : "hover:border-b-[4px] hover:border-b-tropicalBlue"} pb-[10px] mt-[25px] text-tropicalBlue  `}
+              css={`text-[20px] font-thin uppercase ml-[15px] mr-[15px] ${selected === index ? "border-b-white border-b-[4px]" : "hover:border-b-[4px] hover:border-b-[#D0D6F9]"} pb-[10px] mt-[25px] text-[#D0D6F9]  `}
             />
           </div>
         ))}
