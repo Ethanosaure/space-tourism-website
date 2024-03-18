@@ -1,4 +1,4 @@
-import Heading from "../../../typographies/Heading";
+import Heading from "../../typographies/Heading";
 
 const Component = () => {
   const pages = ["destination", "crew", "technology"];

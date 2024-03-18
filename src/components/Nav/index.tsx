@@ -25,7 +25,7 @@ const navLinks: NavLink[] = [
 const Component = ({ isOpen }: { isOpen: boolean }) => {
   return (
     <div
-      className={` md:mt-0 md:flex md:h-[100%] md:w-[100%] md:flex-row md:justify-evenly xl:max-h-[100px] ${isOpen ? "flex flex-col md:pt-0" : "hidden"}`}
+      className={` md:mt-0 md:flex md:h-[100%] md:w-[100%] md:flex-row md:justify-evenly xl:max-h-[80px] ${isOpen ? "flex flex-col md:pt-0" : "hidden"}`}
     >
       {navLinks.map((element, index) => (
         <a
