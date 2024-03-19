@@ -4,7 +4,7 @@ interface TypographiesProps {
   content: string | number | React.ReactNode;
   key?: string;
   css?: string;
-  onClickFunction?: Function;
+  onClick?: React.MouseEventHandler;
 }
 
 export interface HeadingsProps extends TypographiesProps {
@@ -24,6 +24,10 @@ interface ImageData {
   png: string;
   webp: string;
 }
+interface ImageFormat {
+  portrait: string;
+  landscape: string;
+}
 interface Destination {
   name: string;
   images: ImageData;
@@ -31,13 +35,40 @@ interface Destination {
   distance: string;
   travel: string;
 }
-
-export interface SliderProps {
-  arrayNames: string[];
-  data: Destination[];
+interface Crew {
+  name: string;
+  images: ImageData;
+  role: string;
+  bio: string;
+}
+interface Technology {
+  name: string;
+  images: ImageFormat;
+  description: string;
 }
 
-export interface DescriptionProps {
+export interface SliderTechnologyProps {
+  array: string[];
+  data: Technology[];
+}
+export interface SliderDestinationProps {
+  array: string[];
+  data: Destination[];
+}
+export interface SliderCrewProps {
+  array: string[];
+  data: Crew[];
+}
+
+export interface DestinationDescriptionProps {
   data: Destination[];
   selectedPlanet: number;
+}
+export interface CrewDescriptionProps {
+  data: Crew[];
+  selectedMember: number;
+}
+export interface TechnologyDescriptionProps {
+  data: Technology[];
+  selectedTechnology: number;
 }

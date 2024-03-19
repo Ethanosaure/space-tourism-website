@@ -5,7 +5,7 @@ import Slider from "../../components/Sliders/DestinationSlider";
 const Component = () => {
   const data = datas.destinations;
   const dataPlanet: string[] = [];
-  data.forEach((destination) => {
+  data.map((destination) => {
     dataPlanet.push(destination.name);
   });
   return (
@@ -24,7 +24,7 @@ const Component = () => {
           />
         </div>
         <div className="xl:w-[100%]">
-          <Slider arrayNames={dataPlanet} data={data} />
+          <Slider array={dataPlanet} data={data} />
         </div>
       </div>
     </div>

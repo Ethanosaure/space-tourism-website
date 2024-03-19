@@ -1,17 +1,17 @@
 import SubHeading from "../../../typographies/SubHeading";
 import { useState } from "react";
-import { SliderProps } from "../../../types/interface";
-import Description from "../../Descriptions/PlanetsDescription";
+import { SliderDestinationProps } from "../../../types/interface";
+import Description from "../../Descriptions/DestinationDescription";
 
-const Component: React.FC<SliderProps> = ({ arrayNames, data }) => {
+const Component: React.FC<SliderDestinationProps> = ({ array, data }) => {
   const [planetPicture, setPlanetPicture] = useState(data[0].images.png);
   const [selectedPlanet, setSelectedPlanet] = useState(0);
   const picture = planetPicture;
   const selected = selectedPlanet;
-  function showPlanetPictures(index: number) {
+  const showPlanetPictures = (index: number) => {
     setPlanetPicture(data[index].images.png);
     setSelectedPlanet(index);
-  }
+  };
 
   return (
     <div className="flex flex-col items-center justify-center xl:flex-row xl:justify-evenly xl:pt-[5%]">
@@ -24,7 +24,7 @@ const Component: React.FC<SliderProps> = ({ arrayNames, data }) => {
       </div>
       <div className="">
         <div className="flex flex-row justify-center xl:justify-start">
-          {arrayNames.map((planet, index) => (
+          {array.map((planet, index) => (
             <div key={planet} className="">
               <SubHeading
                 kind="subHeading2"
