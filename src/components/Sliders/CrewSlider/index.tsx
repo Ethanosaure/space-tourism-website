@@ -15,24 +15,23 @@ const Component: React.FC<SliderCrewProps> = ({ array, data }) => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center md:flex-col-reverse">
-      <div className="flex w-[80%] flex-col items-center justify-center md:flex-col-reverse md:border-b-0 xl:ml-[5%] xl:mr-[5%]">
-        <div className="flex w-[100%] justify-center border-b-[1px] border-b-white">
+    <div className="flex flex-col items-center justify-center md:flex-col-reverse xl:w-screen xl:flex-row-reverse xl:justify-end ">
+      <div className="flex w-[80%] flex-col items-center justify-center md:flex-col-reverse md:border-b-0  xl:w-fit">
+        <div className="flex w-[100%] justify-center border-b-[1px] border-b-white xl:mr-[10%] xl:w-fit xl:border-0">
           <img
             src={picture}
             alt="Member picture"
-            className="mt-[50px] h-[350px] w-[300px]  md:h-[550px] md:w-[400px]"
+            className="mt-[50px] h-[350px] w-[300px] md:h-[550px] md:w-[400px] xl:absolute xl:right-[10%] xl:top-[190px] xl:mt-0 xl:h-[720px] xl:w-[550px] "
           />
         </div>
-
-        <div className="flex flex-row items-center justify-center">
+        <div className="flex flex-row items-center justify-center xl:absolute xl:left-[10%] xl:top-[800px] ">
           {array.map((member, index) => (
             <div key={member}>
               <SubHeading
                 kind="subHeading2"
                 content={""}
                 onClickFunction={() => showMemberPicture(index)}
-                css={`w-[13px] h-[13px]  m-[10px] rounded-xl ${selected === index ? "bg-white" : "bg-white opacity-50 hover:bg-white hover:opacity-100"} pb-[10px] mt-[25px] text-[#D0D6F9]  `}
+                css={`w-[13px] h-[13px] m-[10px] rounded-xl xl:ml-0 xl:mr-[20px] ${selected === index ? "bg-white" : "bg-white opacity-50 hover:bg-white hover:opacity-100"} pb-[10px] mt-[25px] text-[#D0D6F9]  `}
               />
             </div>
           ))}

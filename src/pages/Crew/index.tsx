@@ -8,7 +8,7 @@ const Component = () => {
     dataMember.push(member.name);
   });
   return (
-    <div className="flex h-screen min-h-[840px] w-screen flex-col bg-[url('../../../public/assets/crew/background-crew-mobile.jpg')] bg-cover bg-center bg-no-repeat md:min-h-[1020px]   md:bg-[url('../../../public/assets/crew/background-crew-tablet.jpg')] xl:min-h-[850px] xl:bg-[url('../../../public/assets/crew/background-crew-desktop.jpg')]">
+    <div className="flex h-screen min-h-[840px] w-screen flex-col bg-[url('../../../public/assets/crew/background-crew-mobile.jpg')] bg-cover bg-center bg-no-repeat md:min-h-[1070px] md:bg-[url('../../../public/assets/crew/background-crew-tablet.jpg')]    xl:min-h-[915px] xl:bg-[url('../../../public/assets/crew/background-crew-desktop.jpg')]">
       <div className="flex flex-col items-center justify-start pt-[15%] xl:pt-[170px]  ">
         <div className=" md:ml-[30px] md:self-start xl:ml-[10%]">
           <Paragraph
