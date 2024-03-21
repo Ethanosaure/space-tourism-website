@@ -9,7 +9,7 @@ const Component = () => {
   const textContent = data.text;
   const titleContent = data.title.toUpperCase();
   return (
-    <div className="flex h-screen min-h-[935px] w-screen  flex-col items-center justify-start bg-[url('../../../public/assets/home/background-home-mobile.jpg')] bg-cover bg-center bg-no-repeat pt-[25%] md:bg-[url('../../../public/assets/home/background-home-tablet.jpg')] xl:flex-row  xl:justify-around xl:bg-[url('../../../public/assets/home/background-home-desktop.jpg')] xl:pt-[10%]">
+    <div className="flex h-screen min-h-[930px] w-screen flex-col items-center justify-start bg-[url('../../../public/assets/home/background-home-mobile.jpg')] bg-cover bg-center bg-no-repeat pt-[25%] md:bg-[url('../../../public/assets/home/background-home-tablet.jpg')]  xl:min-h-[830px] xl:flex-row  xl:justify-around xl:bg-[url('../../../public/assets/home/background-home-desktop.jpg')] xl:pt-[10%]">
       <div className="flex  flex-col text-center xl:w-auto xl:items-start">
         <Paragraph
           kind="span"
