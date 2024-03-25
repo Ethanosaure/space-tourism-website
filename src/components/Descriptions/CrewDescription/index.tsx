@@ -16,7 +16,7 @@ const Component: React.FC<CrewDescriptionProps> = ({
       <Heading
         kind="h3"
         content={data[selectedMember].name}
-        css="uppercase text-[40px] text-white md:text-[90px] md:text-[50px] xl:text-[56px]"
+        css="uppercase text-[31px] text-white md:text-[90px] md:text-[50px] xl:text-[56px]"
       />
       <div className="mt-[20px] ">
         <div className="flex flex-col items-center justify-center xl:items-start xl:justify-between">

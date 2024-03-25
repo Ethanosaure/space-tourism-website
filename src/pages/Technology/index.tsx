@@ -9,9 +9,9 @@ const Component = () => {
     dataTechno.push(techno.name);
   });
   return (
-    <div className="flex h-screen w-screen flex-col bg-[url('../../../public/assets/technology/background-technology-mobile.jpg')] bg-cover  bg-center bg-no-repeat md:min-h-[1070px] md:bg-[url('../../../public/assets/technology/background-technology-tablet.jpg')] xl:min-h-[880px] xl:min-w-[1150px] xl:bg-[url('../../../public/assets/technology/background-technology-desktop.jpg')] ">
-      <div className="flex flex-col items-center justify-start pt-[15%] md:items-start xl:pt-[170px] ">
-        <div className=" md:ml-[30px] xl:ml-[10%]">
+    <div className="flex h-screen min-h-[880px] w-screen flex-col bg-[url('../../../public/assets/technology/background-technology-mobile.jpg')] bg-cover  bg-center bg-no-repeat md:min-h-[1035px] md:bg-[url('../../../public/assets/technology/background-technology-tablet.jpg')] xl:min-h-[880px] xl:min-w-[1150px] xl:bg-[url('../../../public/assets/technology/background-technology-desktop.jpg')] ">
+      <div className="flex flex-col items-center justify-start pt-[15%] md:items-start xl:justify-center xl:pt-[170px]">
+        <div className=" mb-[40px] md:ml-[30px] xl:ml-[10%]">
           <Paragraph
             kind="span"
             content={"03"}
@@ -20,10 +20,10 @@ const Component = () => {
           <Paragraph
             kind="span"
             content={"Space launch 101"}
-            css="text-tropicalBlue text-[25px] text-center tracking-[4.2px] mb-[20px] md:mb-0  xl:text-[27px] uppercase"
+            css="text-tropicalBlue text-[25px] text-center tracking-[4.2px] md:mb-0  xl:text-[27px] uppercase"
           />
         </div>
-        <div className="">
+        <div className="xl:w-[100%]">
           <Slider array={dataTechno} data={data} />
         </div>
       </div>

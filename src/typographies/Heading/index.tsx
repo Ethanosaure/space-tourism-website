@@ -3,7 +3,7 @@ import { HeadingsProps } from "../../types/interface";
 const Typographies = ({ kind, content, css }: HeadingsProps) => {
   const classNameH1 = css ? `text-[150px] ${css}` : `text-[150px]`;
   const classNameH2 = css ? `text-[100px] ${css}` : `text-[100px]`;
-  const classNameH3 = css ? `text-[56px]  ${css}` : `text-[56px]`;
+  const classNameH3 = css ? `${css}` : ``;
   const classNameH4 = css ? `text-[32px]  ${css}` : `text-[32px] `;
   const classNameH5 = css
     ? `text-[28px] tracking-[4.72px] ${css}`

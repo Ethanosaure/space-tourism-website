@@ -6,21 +6,21 @@ const Component: React.FC<TechnologyDescriptionProps> = ({
   selectedTechnology,
 }) => {
   return (
-    <div className="flex flex-col items-center justify-center xl:min-w-[530px] xl:max-w-[700px] xl:items-start xl:justify-start">
+    <div className="flex flex-col items-center justify-center  xl:ml-[60px] xl:min-w-[530px] xl:max-w-[700px] xl:items-start">
       <Heading
-        kind="h4"
-        content={"the terminology ..."}
-        css="uppercase text-sm text-white mt-[30px] md:text-[25px] xl:text-[32px] "
+        kind="h5"
+        content={"the terminology..."}
+        css="uppercase text-[20px] text-sm tracking-[2.36px] text-white mt-[30px] xl:text-[18px] xl:text-tropicalBlue "
       />
       <Heading
         kind="h3"
         content={data[selectedTechnology].name}
-        css="uppercase text-[33px] text-white md:text-[90px] "
+        css="uppercase mb-[20px] text-[38px] text-white md:text-[56px] "
       />
       <Paragraph
         kind="p"
         content={data[selectedTechnology].description}
-        css="text-center w-[80%] text-[25px] text-tropicalBlue xl:text-start"
+        css="text-center w-[80%] max-w-[550px] text-[20px] text-tropicalBlue xl:text-start xl:leading-7 xl:tracking-[1.8px]"
       />
     </div>
   );

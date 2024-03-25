@@ -8,7 +8,7 @@ const Typographies = ({
 }: SubHeadingsProps) => {
   const classNameSub1 = css ? `text-[28px]  ${css}` : `text-[28px] `;
   const classNameSub2 = css
-    ? `text-[14px] tracking-[2.7px]  ${css}`
+    ? `text-[14px] tracking-[2.7px] ${css}`
     : `text-[14px] tracking-[2.7px] `;
 
   switch (kind) {
