@@ -4,12 +4,12 @@ import { SliderDestinationProps } from "../../../types/interface";
 import Description from "../../Descriptions/DestinationDescription";
 
 const Component: React.FC<SliderDestinationProps> = ({ array, data }) => {
-  const [planetPicture, setPlanetPicture] = useState(data[0].images.png);
+  const [planetPicture, setPlanetPicture] = useState(data[0].images.webp);
   const [selectedPlanet, setSelectedPlanet] = useState(0);
   const picture = planetPicture;
   const selected = selectedPlanet;
   const showPlanetPictures = (index: number) => {
-    setPlanetPicture(data[index].images.png);
+    setPlanetPicture(data[index].images.webp);
     setSelectedPlanet(index);
   };
 

@@ -4,13 +4,13 @@ import { SliderCrewProps } from "../../../types/interface";
 import Description from "../../Descriptions/CrewDescription";
 
 const Component: React.FC<SliderCrewProps> = ({ array, data }) => {
-  const [memberPicture, setMemberPicture] = useState(data[0].images.png);
+  const [memberPicture, setMemberPicture] = useState(data[0].images.webp);
   const [selectedMember, setSelectedMember] = useState(0);
   const picture = memberPicture;
   const selected = selectedMember;
 
   const showMemberPicture = (index: number) => {
-    setMemberPicture(data[index].images.png);
+    setMemberPicture(data[index].images.webp);
     setSelectedMember(index);
   };
 

@@ -7,7 +7,7 @@ const Component = () => {
     return Math.floor(Math.random() * destinations);
   }
   const randomPage = randomPageIndex();
-  const planetPictures = datas.destinations[randomPage].images.png;
+  const planetPictures = datas.destinations[randomPage].images.webp;
   return (
     <div
       id="error-page"
