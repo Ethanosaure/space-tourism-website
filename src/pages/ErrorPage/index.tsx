@@ -3,11 +3,14 @@ import Heading from "../../typographies/Heading";
 import ReturnBtn from "../../components/ReturnBtn";
 const Component = () => {
   const destinations = datas.destinations.length;
+
   function randomPageIndex(): number {
     return Math.floor(Math.random() * destinations);
   }
+
   const randomPage = randomPageIndex();
   const planetPictures = datas.destinations[randomPage].images.webp;
+
   return (
     <div
       id="error-page"

@@ -4,12 +4,10 @@ import Slider from "../../components/Sliders/DestinationSlider";
 
 const Component = () => {
   const data = datas.destinations;
-  const dataPlanet: string[] = [];
-  data.map((destination) => {
-    dataPlanet.push(destination.name);
-  });
+  const dataPlanet = data.map((destination) => destination.name);
+
   return (
-    <div className="flex h-screen min-h-[1200px] w-screen flex-col bg-[url('../../../public/assets/destination/background-destination-mobile.jpg')] bg-cover  bg-center bg-no-repeat md:min-h-[1070px] md:bg-[url('../../../public/assets/destination/background-destination-tablet.jpg')] xl:min-h-[880px] xl:min-w-[1150px] xl:bg-[url('../../../public/assets/destination/background-destination-desktop.jpg')] ">
+    <div className="flex h-screen min-h-[1200px] w-screen flex-col bg-[url('../space-tourism-website/public/assets/destination/background-destination-mobile.jpg')] bg-cover  bg-center bg-no-repeat md:min-h-[1070px] md:bg-[url('../space-tourism-website/public/assets/destination/background-destination-tablet.jpg')] xl:min-h-[880px] xl:min-w-[1150px] xl:bg-[url('../space-tourism-website/public/assets/destination/background-destination-desktop.jpg')] ">
       <div className="flex flex-col items-center justify-start pt-[15%] md:items-start xl:pt-[170px] ">
         <div className=" md:ml-[30px] xl:ml-[10%]">
           <Paragraph

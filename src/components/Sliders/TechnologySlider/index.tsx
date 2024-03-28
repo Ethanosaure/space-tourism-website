@@ -32,6 +32,7 @@ const Component: React.FC<SliderTechnologyProps> = ({ array, data }) => {
   const [technoPicture, setTechnoPicture] = useState(data[0].images.landscape);
   const [selectedTechno, setSelectedTechno] = useState(0);
   const selected = selectedTechno;
+
   const showTechnoPicture = (index: number) => {
     setTechnoPicture(data[index].images.landscape);
     setSelectedTechno(index);
@@ -60,8 +61,8 @@ const Component: React.FC<SliderTechnologyProps> = ({ array, data }) => {
                 kind="subHeading1"
                 content={index + 1}
                 onClickFunction={() => showTechnoPicture(index)}
-                css={`text-[20px] pr-[20px] pl-[20px] pb-[5px] pt-[5px] border-[1px] mt-[40px] ml-[30px] rounded-full xl:pr-[30px] xl:pl-[30px] xl:pb-[15px] xl:pt-[15px] xl:ml-0
-                  ${selected === index ? "bg-white" : "text-white"}
+                css={`text-[20px] pr-[20px] pl-[20px] pb-[5px] pt-[5px] border-[1px] mt-[40px] ml-[30px] rounded-full hover:cursor-pointer xl:pr-[30px] xl:pl-[30px] xl:pb-[15px] xl:pt-[15px] xl:ml-0
+                  ${selected === index ? "bg-white" : "text-white hover:bg-tropicalBlue hover:text-[black]"}
                 `}
               />
             </div>

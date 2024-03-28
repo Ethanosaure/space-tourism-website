@@ -8,6 +8,7 @@ const Component: React.FC<SliderDestinationProps> = ({ array, data }) => {
   const [selectedPlanet, setSelectedPlanet] = useState(0);
   const picture = planetPicture;
   const selected = selectedPlanet;
+
   const showPlanetPictures = (index: number) => {
     setPlanetPicture(data[index].images.webp);
     setSelectedPlanet(index);
@@ -30,7 +31,7 @@ const Component: React.FC<SliderDestinationProps> = ({ array, data }) => {
                 kind="subHeading2"
                 content={planet}
                 onClickFunction={() => showPlanetPictures(index)}
-                css={`text-[20px] font-thin uppercase ml-[15px] mr-[15px] ${selected === index ? "border-b-white border-b-[4px]" : "hover:border-b-[4px] hover:border-b-[#D0D6F9]"} pb-[10px] mt-[25px] text-[#D0D6F9]  `}
+                css={`text-[20px] font-thin uppercase ml-[15px] mr-[15px] hover:cursor-pointer ${selected === index ? "border-b-white border-b-[4px]" : "hover:border-b-[4px] hover:border-b-tropicalBlue"} pb-[10px] mt-[25px] text-tropicalBlue  `}
               />
             </div>
           ))}

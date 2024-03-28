@@ -3,12 +3,10 @@ import Paragraph from "../../typographies/Paragraph";
 import Slider from "../../components/Sliders/CrewSlider";
 const Component = () => {
   const data = datas.crew;
-  const dataMember: string[] = [];
-  data.map((member) => {
-    dataMember.push(member.name);
-  });
+  const dataMember = data.map((member) => member.name);
+
   return (
-    <div className="flex h-screen min-h-[840px] w-screen flex-col bg-[url('../../../public/assets/crew/background-crew-mobile.jpg')] bg-cover bg-center bg-no-repeat md:min-h-[1120px] md:bg-[url('../../../public/assets/crew/background-crew-tablet.jpg')]    xl:min-h-[915px] xl:bg-[url('../../../public/assets/crew/background-crew-desktop.jpg')]">
+    <div className="flex h-screen min-h-[840px] w-screen flex-col bg-[url('../space-tourism-website/public/assets/crew/background-crew-mobile.jpg')] bg-cover bg-center bg-no-repeat md:min-h-[1120px] md:bg-[url('../space-tourism-website/public/assets/crew/background-crew-tablet.jpg')]    xl:min-h-[915px] xl:bg-[url('../space-tourism-website/public/assets/crew/background-crew-desktop.jpg')]">
       <div className="flex flex-col items-center justify-start pt-[15%] xl:pt-[170px]  ">
         <div className=" md:ml-[30px] md:self-start xl:ml-[10%]">
           <Paragraph

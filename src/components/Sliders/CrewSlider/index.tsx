@@ -31,7 +31,7 @@ const Component: React.FC<SliderCrewProps> = ({ array, data }) => {
                 kind="subHeading2"
                 content={""}
                 onClickFunction={() => showMemberPicture(index)}
-                css={`w-[13px] h-[13px] m-[10px] rounded-xl xl:ml-0 xl:mr-[20px] ${selected === index ? "bg-white" : "bg-white opacity-50 hover:bg-white hover:opacity-100"} pb-[10px] mt-[25px] text-[#D0D6F9]  `}
+                css={`w-[13px] h-[13px] m-[10px] rounded-xl xl:ml-0 xl:mr-[20px] hover:cursor-pointer ${selected === index ? "bg-white" : "bg-white opacity-50 hover:bg-white hover:opacity-100"} pb-[10px] mt-[25px]   `}
               />
             </div>
           ))}

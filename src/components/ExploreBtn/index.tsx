@@ -2,9 +2,11 @@ import Heading from "../../typographies/Heading";
 
 const Component = () => {
   const pages = ["destination", "crew", "technology"];
+
   function randomPageIndex(): number {
     return Math.floor(Math.random() * pages.length);
   }
+
   function handleClick(): void {
     const randomPages = randomPageIndex();
     const randomPage = pages[randomPages];

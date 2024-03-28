@@ -1,25 +1,27 @@
 import { Link } from "react-router-dom";
 import Paragraph from "../../typographies/Paragraph";
+
 interface NavLink {
   name: string;
   link: string;
 }
+
 const navLinks: NavLink[] = [
   {
     name: "HOME",
-    link: "/",
+    link: "/space-tourism-website/",
   },
   {
     name: "DESTINATION",
-    link: "/destination",
+    link: "/space-tourism-website/destination",
   },
   {
     name: "CREW",
-    link: "/crew",
+    link: "/space-tourism-website/crew",
   },
   {
     name: "TECHNOLOGY",
-    link: "/technology",
+    link: "/space-tourism-website/technology",
   },
 ];
 

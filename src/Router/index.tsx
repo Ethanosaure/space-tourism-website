@@ -11,10 +11,16 @@ const AppRouter = () => {
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/crew" element={<Crew />} />
-        <Route path="/destination" element={<Destination />} />
-        <Route path="/technology" element={<Technology />} />
+        <Route path="/space-tourism-website/" element={<Home />} />
+        <Route path="/space-tourism-website/crew" element={<Crew />} />
+        <Route
+          path="/space-tourism-website/destination"
+          element={<Destination />}
+        />
+        <Route
+          path="/space-tourism-website/technology"
+          element={<Technology />}
+        />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </Router>
