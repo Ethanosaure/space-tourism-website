@@ -4,23 +4,25 @@ import Crew from "../pages/Crew";
 import Destination from "../pages/Destination";
 import Technology from "../pages/Technology";
 import ErrorPage from "../pages/ErrorPage";
-import Header from "../components/Header";
+import Layout from "../pages/Layout";
 
 const AppRouter = () => {
   return (
     <Router>
-      <Header />
       <Routes>
-        <Route path="/space-tourism-website/" element={<Home />} />
-        <Route path="/space-tourism-website/crew" element={<Crew />} />
-        <Route
-          path="/space-tourism-website/destination"
-          element={<Destination />}
-        />
-        <Route
-          path="/space-tourism-website/technology"
-          element={<Technology />}
-        />
+        <Route element={<Layout />}>
+          <Route path="/space-tourism-website/" element={<Home />} />
+          <Route path="/space-tourism-website/crew" element={<Crew />} />
+          <Route
+            path="/space-tourism-website/destination"
+            element={<Destination />}
+          />
+          <Route
+            path="/space-tourism-website/technology"
+            element={<Technology />}
+          />
+        </Route>
+
         <Route path="*" element={<ErrorPage />} />
       </Routes>
     </Router>
