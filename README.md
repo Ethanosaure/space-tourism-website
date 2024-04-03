@@ -10,7 +10,7 @@ The challenge comes from frontend mentor: [here](https://www.frontendmentor.io/c
 
 | Desktop                                                            | Tablet                                                            | Mobile                                                            |
 | ------------------------------------------------------------------ | ----------------------------------------------------------------- | ----------------------------------------------------------------- |
-| ![HomePage](public/screenshots/homePage-desktop.PNG)               | ![HomePage](public/screenshots/HomePage-tablet.PNG)               | ![HomePage](public/screenshots/HomePage-mobile.PNG)               |
+| ![HomePage](public/screenshots/homePage-desktop.PNG)               | ![HomePage](public/screenshots/homePage-tablet.PNG)               | ![HomePage](public/screenshots/homePage-mobile.PNG)               |
 | ![DestinationPage](public/screenshots/destinationPage-desktop.PNG) | ![DestinationPage](public/screenshots/destinationPage-tablet.PNG) | ![DestinationPage](public/screenshots/destinationPage-mobile.PNG) |
 
 # Tech Stack
