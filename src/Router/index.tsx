@@ -4,7 +4,7 @@ import Crew from "../pages/Crew";
 import Destination from "../pages/Destination";
 import Technology from "../pages/Technology";
 import ErrorPage from "../pages/ErrorPage";
-import Layout from "../pages/Layout";
+import Layout from "../Layout";
 
 const AppRouter = () => {
   return (

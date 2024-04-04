@@ -19,7 +19,7 @@ const Component: React.FC<SliderDestinationProps> = ({ array, data }) => {
       <div className="xl:ml-[5%] xl:mr-[5%]">
         <img
           src={picture}
-          alt="planet picture"
+          alt={`picture of the planet: ${data[selectedPlanet].name}`}
           className="mt-[50px] h-[250px] w-[250px] md:h-[300px] md:w-[300px] xl:min-h-[500px] xl:min-w-[500px]"
         />
       </div>

@@ -14,7 +14,7 @@ const Component = () => {
   return (
     <div
       id="error-page"
-      className="flex h-screen min-h-[500px] w-screen flex-col items-center justify-center bg-[url('../space-tourism-website/public/assets/destination/background-destination-mobile.jpg')] bg-cover bg-center bg-no-repeat  md:min-h-[550px] md:bg-[url('../space-tourism-website/public/assets/destination/background-destination-tablet.jpg')] xl:min-h-[630px] xl:bg-[url('../space-tourism-website/public/assets/destination/background-destination-desktop.jpg')] "
+      className="flex h-screen min-h-[500px] w-screen flex-col items-center justify-center bg-[url('/space-tourism-website/assets/destination/background-destination-mobile.jpg')] bg-cover bg-center bg-no-repeat  md:min-h-[550px] md:bg-[url('/space-tourism-website/assets/destination/background-destination-tablet.jpg')] xl:min-h-[630px] xl:bg-[url('/space-tourism-website/assets/destination/background-destination-desktop.jpg')] "
     >
       <Heading
         kind="h1"

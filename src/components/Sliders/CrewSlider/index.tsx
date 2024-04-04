@@ -20,7 +20,7 @@ const Component: React.FC<SliderCrewProps> = ({ array, data }) => {
         <div className="flex w-[100%] justify-center border-b-[1px] border-b-white xl:mr-[10%] xl:w-fit xl:border-0">
           <img
             src={picture}
-            alt="Member picture"
+            alt={`picture of the member: ${data[selectedMember].name}`}
             className="mt-[50px] h-[350px] w-[300px] md:h-[550px] md:w-[400px] xl:absolute xl:right-[10%] xl:top-[190px] xl:mt-0 xl:h-[720px] xl:w-[550px] "
           />
         </div>

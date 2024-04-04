@@ -16,12 +16,12 @@ const TechnologyImage = ({
     <div>
       <img
         src={portraitImage}
-        alt="technology portrait picture"
+        alt={`picture of the used technology in portrait format`}
         className={isVisible ? "hidden xl:flex" : ""}
       />
       <img
         src={landscapeImage}
-        alt="Technology landscape picture"
+        alt={`picture of the used technology in landscape format`}
         className={isVisible ? "w-screen xl:hidden" : ""}
       />
     </div>
