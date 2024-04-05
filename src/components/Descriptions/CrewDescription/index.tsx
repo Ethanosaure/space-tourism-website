@@ -23,7 +23,7 @@ const Component: React.FC<CrewDescriptionProps> = ({
           <Paragraph
             kind="p"
             content={data[selectedMember].bio}
-            css="text-center w-[500px] md:w-[580px] text-[20px] text-tropicalBlue xl:text-start tracking-[1px] md:text-[17px] xl:text-[25px] xl:leading-8 "
+            css="text-center w-[375px] md:w-[580px] text-[20px] text-tropicalBlue xl:text-start tracking-[1px] md:text-[17px] xl:text-[25px] xl:leading-8 "
           />
         </div>
       </div>
