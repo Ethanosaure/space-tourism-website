@@ -28,3 +28,5 @@ starter-code/
 README-template.md
 preview.jpg
 dist/
+# Local Netlify folder
+.netlify

@@ -7,7 +7,7 @@ const Component = () => {
   const dataTechno = data.map((techno) => techno.name);
 
   return (
-    <div className="flex h-screen min-h-[880px] w-screen flex-col bg-[url('/space-tourism-website/assets/technology/background-technology-mobile.jpg')] bg-cover  bg-center bg-no-repeat md:min-h-[1035px] md:bg-[url('/space-tourism-website/assets/technology/background-technology-tablet.jpg')] xl:min-h-[880px] xl:min-w-[1150px] xl:bg-[url('/space-tourism-website/assets/technology/background-technology-desktop.jpg')] ">
+    <div className="flex h-screen min-h-[880px] w-screen flex-col bg-[url('/assets/technology/background-technology-mobile.jpg')] bg-cover  bg-center bg-no-repeat md:min-h-[1035px] md:bg-[url('/assets/technology/background-technology-tablet.jpg')] xl:min-h-[880px] xl:min-w-[1150px] xl:bg-[url('/assets/technology/background-technology-desktop.jpg')] ">
       <div className="flex flex-col items-center justify-start pt-[15%] md:items-start xl:justify-center xl:pt-[170px]">
         <div className=" mb-[40px] md:ml-[30px] xl:ml-[10%]">
           <Paragraph

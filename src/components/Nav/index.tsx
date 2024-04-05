@@ -9,19 +9,19 @@ interface NavLink {
 const navLinks: NavLink[] = [
   {
     name: "HOME",
-    link: "/space-tourism-website/",
+    link: "/",
   },
   {
     name: "DESTINATION",
-    link: "/space-tourism-website/destination",
+    link: "/destination",
   },
   {
     name: "CREW",
-    link: "/space-tourism-website/crew",
+    link: "/crew",
   },
   {
     name: "TECHNOLOGY",
-    link: "/space-tourism-website/technology",
+    link: "/technology",
   },
 ];
 
