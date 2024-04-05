@@ -8,10 +8,10 @@ The challenge comes from frontend mentor: [here](https://www.frontendmentor.io/c
 
 ## Screenshots
 
-| Desktop                                                            | Tablet                                                            | Mobile                                                            |
-| ------------------------------------------------------------------ | ----------------------------------------------------------------- | ----------------------------------------------------------------- |
-| ![HomePage](public/screenshots/homePage-desktop.PNG)               | ![HomePage](public/screenshots/homePage-tablet.PNG)               | ![HomePage](public/screenshots/homePage-mobile.PNG)               |
-| ![DestinationPage](public/screenshots/destinationPage-desktop.PNG) | ![DestinationPage](public/screenshots/destinationPage-tablet.PNG) | ![DestinationPage](public/screenshots/destinationPage-mobile.PNG) |
+| Desktop                                                       | Tablet                                                       | Mobile                                                       |
+| ------------------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![HomePage](./screenshots/homePage-desktop.PNG)               | ![HomePage](./screenshots/homePage-tablet.PNG)               | ![HomePage](./screenshots/homePage-mobile.PNG)               |
+| ![DestinationPage](./screenshots/destinationPage-desktop.PNG) | ![DestinationPage](./screenshots/destinationPage-tablet.PNG) | ![DestinationPage](./screenshots/destinationPage-mobile.PNG) |
 
 # Tech Stack
 
